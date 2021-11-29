@@ -1,7 +1,9 @@
 version: "3.8"
 services:
   backend:
-    image: "sandreea/springboot-react-fullstack:latest"
+    image: "sandreea/springboot-react-fullstack:3"
     ports:
       - "80:8080"
     restart: "always"
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
