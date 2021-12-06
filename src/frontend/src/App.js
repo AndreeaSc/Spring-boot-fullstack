@@ -220,7 +220,12 @@ function App() {
                     {renderStudents()}
                 </div>
             </Content>
-            <Footer style={{textAlign: 'center'}}>By Andreea Schiau</Footer>
+            <Footer style={{textAlign: 'center'}}>
+                <Image
+                    width={75}
+                    src="https://user-images.githubusercontent.com/29914589/144861965-25ef22a4-75b5-45d9-9906-72f8d5897fe7.png"
+                />
+            </Footer>
         </Layout>
     </Layout>
 
