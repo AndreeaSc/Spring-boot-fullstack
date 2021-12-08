@@ -2,8 +2,6 @@ name: CI
 
 on: push
 
-  workflow_dispatch:
-
 env:
   POSTGRESQL_VERSION: 13.1
   POSTGRESQL_DB: sandreea
