@@ -8,6 +8,7 @@ class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
+		//Assertions.fail("Oooops test failed");
 	}
 
 }
