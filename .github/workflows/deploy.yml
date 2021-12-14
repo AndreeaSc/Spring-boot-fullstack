@@ -8,12 +8,12 @@ on:
 
 env:
   # Postgres
-  POSTGRESQL_VERSION: 13.1
+  POSTGRESQL_VERSION: 14.1
   POSTGRESQL_DB: sandreea
   POSTGRESQL_USER: postgres
   POSTGRESQL_PASSWORD: password
   # Java
-  JAVA_VERSION: 1.15
+  JAVA_VERSION: 11
   # DockerHub
   DOCKER_HUB_USERNAME: sandreea
   # AWS & Elastic Bean Stalk
@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     services:
       postgres:
-        image: postgres:13.1
+        image: postgres:14.1
         env:
           POSTGRES_DB: ${{ env.POSTGRESQL_DB }}
           POSTGRES_USER: ${{ env.POSTGRESQL_USER }}
