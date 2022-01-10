@@ -34,10 +34,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
@@ -55,7 +57,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>${project.parent.version}</version>
 				<configuration>
 					<excludes>
 						<exclude>
@@ -250,6 +251,7 @@
 										<resource>
 											<directory>src/frontend/build</directory>
 										</resource>
+
 									</resources>
 									<outputDirectory>${basedir}/target/classes/static</outputDirectory>
 								</configuration>
@@ -260,5 +262,4 @@
 			</build>
 		</profile>
 	</profiles>
-
 </project>
