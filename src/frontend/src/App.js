@@ -11,7 +11,7 @@ import {
     Badge,
     Tag,
     Avatar,
-    Radio, Popconfirm, Image, Divider
+    Radio, Popconfirm, Image
 } from 'antd';
 
 import {
@@ -228,11 +228,6 @@ function App() {
             </Footer>
         </Layout>
     </Layout>
-
-
-    return students.map((student, index) => {
-        return <p key={index}>{student.id} {student.name}</p>
-    });
 }
 
 export default App;
